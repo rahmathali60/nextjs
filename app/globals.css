@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: (
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  display:flex;
+  flex-wrap: nowrap;
+}
+
+.imagegen-input {
+  display:flex;
+  flex-wrap: wrap;
+
+  padding: 5px;
+  height: 30px;
+  background-color:beige;
+  width: 1000px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.chatgpt-input{
+  display:flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  height: 30px;
+  background-color:beige;
+  width: 535px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+button[type="submit" ] {
+  background-color: cyan;
+}
+.cancel-button{
+  background-color: rgb(197, 91, 91);
+}
+button {
+  padding: 0.5rem 1rem; 
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #4CAF50;
+  font-size: 1rem;
+  margin: 0.5rem;
+  height: 40px;
+  width: 120px;
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+.image-row-container {
+  position: relative;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; 
+  height:75vh;
+  align-items: center;
+  justify-content: center;
+ }  
+ .chatgpt-answer{
+  /* display :grid; */
+  /* position: absolute; */
+  flex-wrap: wrap; 
+  
+ }
+ pre {
+  background-color: rgb(255, 247, 229);
+  /* border: 1px solid red; */
+  white-space: pre-line;
+}
+.copy-button{
+  position: absolute;
+  /* align-self:first baseline; */
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  cursor: pointer;
+  /* align-items: start;  */
+
+}
+.copy-container{
+  display: flex;
+  flex-direction: column;
+  /* align-self: right; */
+  /* text-align: start; */
+  /* align-items: end;  */
+  /* text-align: start; */
+  
+  /* /* justify-content: center; */
+}
+
